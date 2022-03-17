@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Страница выполнения второго задания</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+</head>
+<body>
+<div id="header">
+	<h2>Одностраничное приложение.</h2>
+</div>
+    <form id="msform">    
+		<ul id="progressbar">
+            <li class="active" id="account"><strong>Имя</strong></li>
+            <li id="personal"><strong>Фамилия</strong></li>
+            <li id="payment"><strong>Почта</strong></li>
+            <li id="confirm"><strong>Завершение</strong></li>
+        </ul>
+		<fieldset>
+			<p>Введте Ваше имя:</p><br>
+			<input class="input-text active-text" type="text"><span style="color:red" class="active-span"></span><br>
+			<input type="button" name="next" class="next action-button" value="Следующий шаг" />
+		</fieldset>
+		<fieldset>
+			<p>Введте Вашу фамилию:</p><br>
+			<input class="input-text" type="text"><span style="color:red" class="fnamef"></span><br>
+			<input type="button" name="previous" class="previous action-button-previous" value="Предыдущий шаг"/> 
+			<input type="button" name="next" class="next action-button" value="Следующий шаг" />
+		</fieldset>
+		<fieldset>
+			<p>Введите Ваш e-mail:</p><br>
+			<input id="submitter" class="input-text" type="text"><span style="color:red"></span><br>
+			<input type="button" name="previous" class="previous action-button-previous" value="Предыдущий шаг"/>
+			<input type="button" name="next" class="next action-button" value="Завершить" />
+		</fieldset>
+		<fieldset>
+			<p>Регистрация окончена</p>
+		</fieldset>
+	</form>
+	<footer style="position:absolute; right: 50%; bottom: 0">
+	<p><a href="../index.html">Вернуться к выбору задания</a></p>
+	</footer>
+<script src="../2/libs/jquery/jquery-3.6.0.min.js"></script>
+<script src="second-task.js"> </script>
+</body>
+</html>

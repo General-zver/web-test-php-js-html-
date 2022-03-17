@@ -1,0 +1,2 @@
+#Обработка ошибок
+ErrorDocument 404  http://adci.work/errors/error.html

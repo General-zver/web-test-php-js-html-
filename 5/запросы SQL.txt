@@ -1,0 +1,45 @@
+/********Добавление данных в базу********/
+INSERT INTO `course` (`course_id`, `name`, `description`) 
+VALUES (NULL, 'PHP', 'Курс по изучению основ PHP'), 
+(NULL, 'Node.JS', 'Курс по изучению Node.JS'),
+(NULL, 'Laravel', 'Курс по обучению работе с библиотекой Laravel'), 
+(NULL, 'SQL', 'Курс обучения языку структурированных запросов SQL(SEQUEL)');
+
+INSERT INTO `trainee` (`trainee_id`, `name`, `email`) 
+VALUES (NULL, 'Иванов Иван Иванович', 'ivanov_i@mail.ru'), 
+(NULL, 'Петров Николай Викторович', 'petr_nv@gmail.com'),
+(NULL, 'Камалетдинов Фарух Нигметович', 'frhn1998@mail.ru'), 
+(NULL, 'Бубенчиков Джордж Денисович', 'bubenchik@inbox.com'),
+(NULL, 'Штольц Сидор Астафьевич', 'sidor_shtolz@rambler.ru'),
+(NULL, 'Кёрн Рейнхольд Джошевич', 'reinhold808078@mail.com');
+
+
+INSERT INTO `history` (`history_id`, `trainee_id`, `course_id`, `start`, `end`, `status`) 
+VALUES (NULL, '1', '1', '1646733600', '1646751600', '1'), 
+(NULL, '3', '4', '1646215200', '1646589600', '1'),
+(NULL, '2', '3', '1644656400', '1645202880', '0'), 
+(NULL, '6', '2', '1645264860', '1645380300', '1'),
+(NULL, '5', '2', '1644138000', '1646224080', '0'),
+(NULL, '4', '1', '1646388900', '1647622200', '1'),
+(NULL, '2', '1', '1644667200', '1645896120', '1');
+
+/********Конец добавления данных в базу********/
+
+
+/*1.Список стажёров которые успешно прошли курс PHP в прошлом месяце*/
+select t.name, t.email, c.name, h.end
+from history h
+		left join trainee t on (t.trainee_id=h.trainee_id)
+		left join course c on (c.course_id=h.course_id)
+where h.end>=1643673600 and h.end<=1646092799 and h.course_id=1 and h.status=1
+
+/*1.Конец запроса*/
+
+/*2.Количество успешных прохождений для каждого из курсов в этом месяце*/
+select c.name, count(h.course_id)
+from course c
+		left join history h on (h.course_id=c.course_id)
+where h.status=1 and h.end>=1646092800 and h.end<=1648771199
+
+
+/*2.Конец запроса*/
