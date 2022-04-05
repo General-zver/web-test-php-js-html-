@@ -1,39 +1,46 @@
 <html>
+
 <head>
-<title>Страница выполнения первого задания</title>
-<link type="text/css" rel="stylesheet" href="../css/style.css">
+    <title>Страница выполнения первого задания</title>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-<header>
-<h2>Задание №1. Регистрация пользователя</h2>
-</header>
-<form name="register" method="post" action="end-register.html">
-<p><b>Имя:</b><br>
-<input type="text" size="40">
-</p>
-<p><b>Фамилия:</b><br>
-<input type="text" size="40">
-</p>
-<p><b>Почта:</b><br>
-<input type="text" size="40">
-</p>
-<p><hr class="line" ></p>
+    <header>
+        <b><p class="h">Задание №1. Регистрация пользователя</p></b>
+    </header>
+    <div class="main-form">
+        <form name="register" method="post" action="end-register.html">
+            <p><b>Имя:</b><br>
+                <input type="text" size="40" autofocus placeholder="Введите Ваше имя">
+            </p>
+            <p><b>Фамилия:</b><br>
+                <input type="text" size="40" placeholder="Введите Вашу Фамлию">
+            </p>
+            <p><b>Почта:</b><br>
+                <input type="text" size="40" placeholder="Введите Вашу почту">
+            </p>
+            <p>
+                <hr class="line">
+            </p>
+            <div class="rb">
+            <p><b>Курсы:</b> <br>
+                <input type="radio" name="kurs" value="dr7"> Drupal 7<br>
+                <input type="radio" name="kurs" value="dr8"> Drupal 8<br>
+            </p>
+            </div>
+            <p>Дополнительная информация:<br>
+                <textarea name="dopinfo" cols="40" rows="5" placeholder="Расскажите немного о себе..."></textarea>
+            </p>
 
-<p><b>Курсы:</b> <br>
-<input type="radio" name="kurs" value="dr7"> Drupal 7<br>
-<input type="radio" name="kurs" value="dr8"> Drupal 8<br>
-</p>
-
-<p>Дополнительная информация:<br>
-<textarea name="dopinfo" cols="40" rows="5"></textarea>
-</p>
-
-<p>
-<input type="submit" value="Отправить"><input type="reset" value="Очистить">
-</p>
-</form>
-<footer style="position:absolute; right: 50%; bottom: 0">
-<p><a href="../index.html">Вернуться к выбору задания</a></p>
-</footer>
+            <p>
+                <input type="submit" value="Отправить"><input type="reset" value="Очистить">
+            </p>
+        </form>
+    </div>
+    <div class="foot">
+        <a href="../index.html" class="bb link">Вернуться к выбору задания</a>
+    </div>
 </body>
+
 </html>

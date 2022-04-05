@@ -15,7 +15,7 @@ echo '
 
 <body>
 	<div id="header">
-		<h2>PHP. Найти строку в тексте.</h2>
+		<p class="h">PHP. Найти строку в тексте.</p>
 	</div>
 	<div class="input-pattern">
 		<form action="" method="POST">
@@ -58,9 +58,9 @@ echo '
             }
         }
 	echo '</div>
-    <footer style="position:absolute; right: 50%; bottom: 0">
-	<p><a href="../index.html">Вернуться к выбору задания</a></p>
-	</footer>
+	<div class="foot">
+		<a href="../index.html" class="bb link">Вернуться к выбору задания</a>
+	</div>
 	</body>
 
 </html>

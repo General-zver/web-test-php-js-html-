@@ -3,31 +3,41 @@ html {
 }
 body {
 	background-color: E2E2E2;
+    font-family: sans-serif;
 }
-h2 {
+.h {
 	text-align: center;
 	font-family: montserrat;
 	margin-top: 20px;
+    font-size: 28px;
 }
-
 .line {
-	color: 000000;
-	widht: 500;
-	align: left;
-	position: absolute;
+	color: #000000;
+	width: 440px;
+	text-align: center;
 	left: 0;
 }
-
+.main-form {
+    text-align: center;
+    box-shadow: 0 0 15px #000000;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 400px;
+    width: 450px;
+}
+.rb {
+    margin-left: 70px;
+    text-align: left !important;
+}
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
     color: lightgrey
 }
-
 #progressbar .active {
     color: #000000
 }
-
 #progressbar li {
     list-style-type: none;
     font-size: 12px;
@@ -35,27 +45,22 @@ h2 {
     float: left;
     position: relative
 }
-
 #progressbar #account:before {
     font-family: FontAwesome;
     content: "\f007"
 }
-
 #progressbar #personal:before {
     font-family: FontAwesome;
     content: "\f007"
 }
-
 #progressbar #payment:before {
     font-family: FontAwesome;
     content: "\f023"
 }
-
 #progressbar #confirm:before {
     font-family: FontAwesome;
     content: "\f00c"
 }
-
 #progressbar li:before {
     width: 50px;
     height: 50px;
@@ -68,7 +73,6 @@ h2 {
     margin: 0 auto 10px auto;
     padding: 2px
 }
-
 #progressbar li:after {
     content: '';
     width: 100%;
@@ -79,12 +83,10 @@ h2 {
     top: 25px;
     z-index: -1
 }
-
 #progressbar li.active:before,
 #progressbar li.active:after {
     background: skyblue
 }
-
 #msform {
     text-align: center;
     position: relative;
@@ -93,7 +95,6 @@ h2 {
 	margin-left: auto;
     margin-right: auto
 }
-
 #msform fieldset .form-card {
     background: white;
     border: 0 none;
@@ -190,8 +191,50 @@ h2 {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
 }
 
-
 .input-pattern {
 	margin: 5% 15% 15% 30%;
 	padding-bottom: 5%;
+}
+
+.link-bar {
+    
+    display: block;
+    position: absolute;
+    right: 40%;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.link:hover {
+    box-shadow: 0 0 20px 3px rgba(8, 233, 38, 0.95);
+}
+
+.bt {
+    margin: 20px;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.bb {
+    margin: 20px;
+    height: 50px;
+    width: 350px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.foot {
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 37%;
 }
