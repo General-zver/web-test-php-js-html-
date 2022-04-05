@@ -30,6 +30,9 @@ body {
     margin-left: 70px;
     text-align: left !important;
 }
+textarea {
+    resize: none;
+}
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
