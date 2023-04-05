@@ -24,7 +24,7 @@ echo '
 			<input type="submit" name="search" value="Найти">
 		</form>';
         if(isset($_POST)){
-            if(strlen($_POST['InputStr'])>0){
+            if(isset($_POST['InputStr']) && strlen($_POST['InputStr'])>0){
 				$masspatt=array();  
 				$massrepl=array(); 
 				$i=0;
